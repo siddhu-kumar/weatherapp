@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<script src="https://kit.fontawesome.com/053bed41ef.js" crossorigin="anonymous"></script>
+<script src="jquery.js" type="text/javascript"></script>
+<link rel="stylesheet" href="weather.css">
+<body>
+    <div id="layout">
+        <div id="box">
+            <p>Sunrise: </p>
+            <p>Sunset: </p>
+            <p>Feels like: </p>
+            <p>Humidity: </p>
+            <p>Wind speed: </p>
+            <p>Wind Direction: </p>
+            <p>Visibility: </p>
+
+        </div>
+        <div id="sun">
+            <i class="fa-regular fa-sun fa-5x"></i>
+        </div>
+        <div id="city">
+            <p id="address">
+                <i class="fa-sharp fa-solid fa-location-dot fa-1x"></i>
+                <span>{%location%},{%country%}</span></p>
+            <p id="date-time">Thurs | Dec 01 | 10:50 PM</p>
+        </div>
+        <div id="temperature">
+            <h2 id="curr-temp"><i class="fa-solid fa-temperature-three-quarters fa-1x"></i> 
+                <span>{%tempval%}</span></h2> 
+            <h4 id="max-min">Min {%tempmin%}&deg; | Max {%tempmax%}&deg;</h4>
+        </div>
+        <div id="water-wave">
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+            <div class="wave wave1"></div>
+        </div>
+    </div>
+    
+</body>
+<!-- <script src="index.js"></script> -->
+<script src="weather.js" type="text/javascript"></script>
+<script src="path.js" type="text/javascript"></script>
+</html>
